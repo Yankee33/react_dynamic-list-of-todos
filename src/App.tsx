@@ -35,6 +35,7 @@ export const App: React.FC = () => {
   useEffect(() => {
     if (!selectedTodo) {
       setUser(null);
+
       return;
     }
 
@@ -64,6 +65,7 @@ export const App: React.FC = () => {
       return matchesStatus && matchesQuery;
     });
   }, [todos, filterStatus, query]);
+
   return (
     <>
       <div className="section">

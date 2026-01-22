@@ -7,7 +7,11 @@ interface Props {
   onShowTodo: (todo: Todo) => void;
 }
 
-export const TodoList: React.FC<Props> = ({ todos, onShowTodo, selectedTodo }) => (
+export const TodoList: React.FC<Props> = ({
+  todos,
+  onShowTodo,
+  selectedTodo,
+}) => (
   <table className="table is-narrow is-fullwidth">
     <thead>
       <tr>
